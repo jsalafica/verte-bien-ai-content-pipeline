@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Respuesta HITL Slack",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "enum": [
+        "APROBAR",
+        "RECHAZAR"
+      ]
+    },
+    "thread_ts": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "text",
+    "thread_ts"
+  ]
+}

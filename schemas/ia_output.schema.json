@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Salida IA - contenido_instagram",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requiere_revision": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "titulo",
+    "caption",
+    "hashtags",
+    "requiere_revision"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contenido",
+  "type": "object",
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "idea_semilla": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "aprobado": {
+      "type": "boolean"
+    },
+    "slack_message_ts": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "record_id",
+    "idea_semilla",
+    "estado"
+  ]
+}
